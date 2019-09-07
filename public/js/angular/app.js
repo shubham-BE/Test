@@ -1,7 +1,6 @@
 var app = angular.module('LaravelApp',
     [
-        'ngRoute',
-        'ui.calendar'
+        'ngRoute'
     ], function ($interpolateProvider, $locationProvider ,$routeProvider)
     {
         $interpolateProvider.startSymbol('<%');
@@ -36,10 +35,3 @@ app.filter('rawHtml', [
         };
     }
 ]);
-
-
-$.ajaxSetup({
-    headers: {
-        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-    }
-});

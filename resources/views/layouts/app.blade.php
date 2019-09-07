@@ -18,6 +18,10 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <script src="{{ asset('js/angular/angular.min.js') }}"></script>
+    <script src="{{ asset('js/angular/angular-route.js') }}"></script>
+    <script src="{{ asset('js/angular/angular-count-to.js') }}"></script>
+    <script src="{{ asset('js/angular/app.js') }}"></script>
 </head>
 <body>
     <div id="app">
