@@ -8,9 +8,9 @@
 <!-- Custom scripts for all pages-->
 <script src="{{ asset('js/sb-admin-2.min.js') }}"></script>
 
-<!-- Page level plugins -->
-<script src="{{ asset('vendor/chart.js/Chart.min.js') }}"></script>
+{{--<script src="{{ asset('js/bootstrap-datepicker.min.js') }}"></script>--}}
+{{--<script src="{{ asset('js/custom.js') }}"></script>--}}
+{{--<script src="{{ asset('js/moment/moment.js') }}"></script>--}}
+{{--<script src="{{ asset('js/moment/moment.min.js') }}"></script>--}}
 
-<!-- Page level custom scripts -->
-<script src="{{ asset('js/demo/chart-area-demo.js') }}"></script>
-<script src="{{ asset('js/demo/chart-pie-demo.js') }}"></script>
+

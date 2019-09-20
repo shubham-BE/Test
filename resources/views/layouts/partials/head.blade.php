@@ -5,7 +5,12 @@
 <!-- Custom styles for this template-->
 <link href="{{ asset('css/sb-admin-2.min.css') }}" rel="stylesheet">
 <!-- Angular Files-->
+
+
 <script src="{{ asset('js/angular/angular.min.js') }}"></script>
 <script src="{{ asset('js/angular/angular-route.js') }}"></script>
 <script src="{{ asset('js/angular/angular-count-to.js') }}"></script>
 <script src="{{ asset('js/angular/app.js') }}"></script>
+
+
+

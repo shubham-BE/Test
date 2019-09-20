@@ -14,7 +14,6 @@
             <br>
             
             <form action="" >
-        
                 <div class="form-group">
                     <input type="text" name="name" placeholder="NAME" class="form-control" ng-model="data.name">
                 </div>

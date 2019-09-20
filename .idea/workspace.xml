@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4a0c1220-40e8-46bd-bfb9-13961548890f" name="Default Changelist" comment="" />
+    <list default="true" id="4a0c1220-40e8-46bd-bfb9-13961548890f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Student/StudentsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Student/StudentsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Student/Student.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Student/Student.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/angular/student/show_all_students_controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/angular/student/show_all_students_controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Student/addStudent.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Student/addStudent.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Student/showAllStudents.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Student/showAllStudents.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/master.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/partials/head.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/partials/head.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/partials/js.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/partials/js.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,6 +25,9 @@
     <execution>
       <executable />
     </execution>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -101,8 +116,9 @@
   </component>
   <component name="ProjectId" id="1PmIX1Jfq24wnPCoTUW4M6k0SNZ" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../task1" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RunDashboard">
@@ -135,6 +151,18 @@
       <updated>1566472880790</updated>
       <workItem from="1566472883951" duration="2038000" />
       <workItem from="1566559704240" duration="2206000" />
+      <workItem from="1568173893070" duration="12069000" />
+      <workItem from="1568187425628" duration="291000" />
+      <workItem from="1568188262065" duration="5808000" />
+      <workItem from="1568260394208" duration="6031000" />
+      <workItem from="1568282618861" duration="3576000" />
+      <workItem from="1568347141268" duration="5224000" />
+      <workItem from="1568696296506" duration="5854000" />
+      <workItem from="1568702209093" duration="2312000" />
+      <workItem from="1568705259501" duration="10027000" />
+      <workItem from="1568779625648" duration="11567000" />
+      <workItem from="1568868067319" duration="1621000" />
+      <workItem from="1568959659485" duration="15912000" />
     </task>
     <servers />
   </component>
@@ -143,5 +171,28 @@
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.env" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/public/js/angular/student/add_student_controller.js</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

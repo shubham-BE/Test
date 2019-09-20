@@ -117,16 +117,31 @@
         </li> -->
 
         <!-- Nav Item - Tables -->
-        <li class="nav-item">
-            <a class="nav-link" href="{{URL('/add')}}">
-                <i class="fas fa-fw fa-table"></i>
-                <span>Add a user</span></a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="{{URL('/all_students')}}">
-                <i class="fas fa-fw fa-table"></i>
-                <span>Show all students</span></a>
-        </li>
+    @if(Auth::user()->is_teacher == 1)
+
+            <li class="nav-item">
+                <a class="nav-link" href="{{URL('/add')}}">
+                    <i class="fas fa-fw fa-table"></i>
+                    <span>Add a Student</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{URL('/all_students')}}">
+                    <i class="fas fa-fw fa-table"></i>
+                    <span>Show all Students</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{URL('/student_attendence')}}">
+                    <i class="fas fa-fw fa-table"></i>
+                    <span>Attendence</span></a>
+            </li>
+    @endif
+    @if(Auth::user()->is_student == 1)
+            <li class="nav-item">
+                <a class="nav-link" href="{{URL('/student_profile?'.Auth()->user()->id)}}">
+                    <i class="fas fa-fw fa-table"></i>
+                    <span>Edit Profile</span></a>
+            </li>
+    @endif
 
         <!-- Divider -->
         <hr class="sidebar-divider d-none d-md-block">
@@ -316,10 +331,12 @@
                                 Activity Log
                             </a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
                                 <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-                                Logout
-                            </a>
+                                <a class="dropdown-item" href="{{ route('logout') }}"
+                                   onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                    {{ __('Logout') }}
+                                </a>
                         </div>
                     </li>
 

@@ -1,31 +1,14 @@
-app.controller('showAllStudentsController', function ($scope, $http, $location, $window)
+app.controller('profileController', function ($rootScope, $scope, $http, $window, $location)
 {
-
     $scope.loading = false;
-
+    $scope.user_id = $location.search().user_id;
     $scope.data = [];
-
 
     $scope.init = function ()
     {
         $scope.loading = true;
-        $http.get(url + 'api/all_students/get_all_details')
-            .then(function (response)
-            {
-                $scope.data = response.data;
-                $scope.loading = false;
-            })
-            .catch(function ()
-            {
-                $scope.loading = false;
-            });
-    };
-
-    $scope.delete = function (t)
-    {
-        $scope.loading = true;
-        $http.post(url + 'api/all_student/delete_student', {
-            data: t
+        $http.post(url + 'api/student_profile/get_student_profile' ,{
+            user_id: $scope.user_id
         })
             .then(function (response)
             {
@@ -33,14 +16,24 @@ app.controller('showAllStudentsController', function ($scope, $http, $location, 
                 $scope.loading = false;
             })
             .catch(function ()
+            {   
+                $scope.loading = false;
+            });
+    }
+    $scope.Save = function (data)
+    {
+        $scope.loading = true;
+        $http.post(url + 'api/student_profile/save', {
+            data: data
+        })
+            .then(function (response)
+            {
+                window.location.href = url + 'all_students';
+            })
+            .catch(function ()
             {
                 $scope.loading = false;
             });
-    };
-    
-    $scope.openProfile = function (t)
-    {
-        window.location.href = url + 'student_profile?user_id=' + t.user_id;
     };
 
     $scope.init();

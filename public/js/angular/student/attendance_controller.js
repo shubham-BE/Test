@@ -1,18 +1,19 @@
-app.controller('showAllStudentsController', function ($scope, $http, $location, $window)
+app.controller('AttendenceController', function ($scope, $http, $location, $window)
 {
+     $scope.loading = false;
 
-    $scope.loading = false;
-
-    $scope.data = [];
+    $scope.data = {};
+    // $scope.is_ = [];
 
 
     $scope.init = function ()
     {
         $scope.loading = true;
-        $http.get(url + 'api/all_students/get_all_details')
+        $http.get(url + 'api/student_attendence/get_student_list')
             .then(function (response)
             {
-                $scope.data = response.data;
+                $scope.data = response.data;    // student and attendence list is stored in scope.data
+                console.log($scope.data);
                 $scope.loading = false;
             })
             .catch(function ()
@@ -20,12 +21,12 @@ app.controller('showAllStudentsController', function ($scope, $http, $location, 
                 $scope.loading = false;
             });
     };
-
-    $scope.delete = function (t)
+    $scope.Save = function ()
     {
+        console.log($scope.data);
         $scope.loading = true;
-        $http.post(url + 'api/all_student/delete_student', {
-            data: t
+        $http.post(url + 'api/student_attendence/save_attendence', {
+            data : $scope.data
         })
             .then(function (response)
             {
@@ -37,11 +38,9 @@ app.controller('showAllStudentsController', function ($scope, $http, $location, 
                 $scope.loading = false;
             });
     };
-    
-    $scope.openProfile = function (t)
-    {
-        window.location.href = url + 'student_profile?user_id=' + t.user_id;
-    };
-
     $scope.init();
+
 });
+
+
+
